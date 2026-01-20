@@ -41,10 +41,22 @@ This repository therefore uses **hardware profiles** instead of one fragile scri
 ## 📁 Repository Structure Example
 
 profiles/
-  intel-skylake-ult/metrics.sh
-  amd-ryzen-apu/metrics.sh
-  nvidia-desktop/metrics.sh
-  generic/metrics.sh
+
+├── intel-skylake-ult/
+
+│   └── metrics.sh
+
+├── amd-ryzen-apu/
+
+│   └── metrics.sh
+
+├── nvidia-desktop/
+
+│   └── metrics.sh
+
+└── generic/
+
+    └── metrics.sh
 
 
 Each profile targets a **specific hardware family**.
