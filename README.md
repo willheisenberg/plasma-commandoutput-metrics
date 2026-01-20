@@ -42,13 +42,13 @@ This repository therefore uses **hardware profiles** instead of one fragile scri
 
 profiles/
 ├── intel-skylake-ult/
-│ └── metrics.sh
+│   └── metrics.sh
 ├── amd-ryzen-apu/
-│ └── metrics.sh
+│   └── metrics.sh
 ├── nvidia-desktop/
-│ └── metrics.sh
+│   └── metrics.sh
 └── generic/
-└── metrics.sh
+    └── metrics.sh
 
 Each profile targets a **specific hardware family**.
 
