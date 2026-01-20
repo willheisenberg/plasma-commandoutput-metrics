@@ -40,23 +40,59 @@ This repository therefore uses **hardware profiles** instead of one fragile scri
 
 ## 📁 Repository Structure Example
 
+# 📊 Plasma Command Output Metrics
+
+A collection of **hardware-aware system metrics scripts** for  
+**KDE Plasma’s Command Output widget**.
+
+Designed for:
+- Plasma 6
+- Wayland
+- Nerd Font icons
+- minimal overhead
+- no Python, no daemons
+
+---
+
+## ✨ Features
+
+- CPU usage
+- CPU temperature (multi-core aware)
+- RAM, Swap, ZRAM usage
+- Disk usage
+- Network throughput (auto-detected interface)
+- GPU usage (kernel-native where possible)
+- Nerd Font icons for compact panel display
+
+---
+
+## 🧠 Philosophy
+
+System metrics are **not universal**.
+
+Different hardware requires different approaches:
+- Intel vs AMD
+- iGPU vs dGPU
+- RC6 vs sysfs vs vendor tools
+- laptops vs desktops
+
+This repository therefore uses **hardware profiles** instead of one fragile script.
+
+---
+
+## 📁 Repository Structure Example
+
+```text
 profiles/
-
 ├── intel-skylake-ult/
-
 │   └── metrics.sh
-
 ├── amd-ryzen-apu/
-
 │   └── metrics.sh
-
 ├── nvidia-desktop/
-
 │   └── metrics.sh
-
 └── generic/
-
     └── metrics.sh
+```
 
 
 Each profile targets a **specific hardware family**.
